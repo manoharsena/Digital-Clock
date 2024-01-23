@@ -1,0 +1,48 @@
+@font-face {
+  font-family: 'digital-7';
+  src: url('../digital-7.regular.ttf');
+}
+
+body {
+  background-color: lightgrey;
+  font-family:'digital-7';
+  color:brown;
+}
+
+.row {
+  display: flex;
+  height: 90vh;
+  width: 100%;
+  max-width: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.clock {
+  font-size: 3rem;
+  display: flex;
+  border: 10px double green;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#hours {
+  padding-left: 25px;
+}
+
+#meridiem {
+  padding-left: 25px;
+  padding-right: 25px;
+  border-left: 2px solid green;
+}
+
+.separator {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
